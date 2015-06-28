@@ -21,6 +21,11 @@
 TARGET_KERNEL_CONFIG := cyanogenmod_bacon_defconfig
 BOARD_KERNEL_CMDLINE := console=ttyHSL0,115200,n8 androidboot.hardware=bacon user_debug=31 msm_rtb.filter=0x3F ehci-hcd.park=3 androidboot.bootdevice=msm_sdcc.1
 
+# Optimizations
+ROM_OPTIS := true
+BOARD_GLOBAL_CFLAGS := -mvectorize-with-neon-quad --param l1-cache-size=16 --param l1-cache-line-size=16 --param l2-cache-size=2048
+BOARD_GLOBAL_CPPFLAGS := -mvectorize-with-neon-quad --param l1-cache-size=16 --param l1-cache-line-size=16 --param l2-cache-size=2048
+
 # Bluetooth
 BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := device/oneplus/bacon/bluetooth
 
