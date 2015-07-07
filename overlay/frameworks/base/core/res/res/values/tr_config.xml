@@ -25,7 +25,7 @@
     <bool name="config_enableScreenrecordChord">true</bool>		
 
     <!-- Hardware keys on/off option -->
-    <bool name="config_hwKeysPref">false</bool>
+    <bool name="config_hwKeysPref">true</bool>
 
 
 </resources>
