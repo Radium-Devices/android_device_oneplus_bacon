@@ -22,7 +22,11 @@ TARGET_KERNEL_CONFIG := cyanogenmod_bacon_defconfig
 BOARD_KERNEL_CMDLINE := console=ttyHSL0,115200,n8 androidboot.hardware=bacon user_debug=31 msm_rtb.filter=0x3F ehci-hcd.park=3 androidboot.bootdevice=msm_sdcc.1
 
 ifneq ($(AZURE),true)
+ifeq ($(B310),true)
+    KERNEL_TOOLCHAIN := /home/akhilnarang/radium/prebuilts/gcc/linux-x86/arm/arm-eabi-6.0/bin
+else
     KERNEL_TOOLCHAIN := /home/akhil/radium/prebuilts/gcc/linux-x86/arm/arm-eabi-6.0/bin
+endif
 else
     KERNEL_TOOLCHAIN := /home/akhilnarang/rom/radium/prebuilts/gcc/linux-x86/arm/arm-eabi-6.0/bin
 endif
