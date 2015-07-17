@@ -6,10 +6,10 @@
     "revision": "cm-12.1"
   },
   {
-    "repository": "Radium-Devices/Radium_bacon",
+    "repository": "OwnROM-Devices/OwnKernel-bacon",
     "target_path": "kernel/oneplus/msm8974",
     "remote": "github",
-    "revision": "5.1"
+    "revision": "cm-12.1"
   },
   {
     "repository": "CyanogenMod/android_device_oppo_common",
