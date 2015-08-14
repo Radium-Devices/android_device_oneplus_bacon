@@ -31,6 +31,7 @@ endif
 ROM_OPTIS := true
 BOARD_GLOBAL_CFLAGS := -mvectorize-with-neon-quad --param l1-cache-size=16 --param l1-cache-line-size=16 --param l2-cache-size=2048
 BOARD_GLOBAL_CPPFLAGS := -mvectorize-with-neon-quad --param l1-cache-size=16 --param l1-cache-line-size=16 --param l2-cache-size=2048
+TARGET_GCC_VERSION_EXP := 4.9
 
 # Bluetooth
 BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := device/oneplus/bacon/bluetooth
