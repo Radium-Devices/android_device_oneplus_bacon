@@ -49,8 +49,8 @@ BOARD_KERNEL_PAGESIZE := 2048
 BOARD_KERNEL_SEPARATED_DT := true
 BOARD_MKBOOTIMG_ARGS := --ramdisk_offset 0x02000000 --tags_offset 0x01e00000
 TARGET_KERNEL_ARCH := arm
-TARGET_KERNEL_CONFIG := cyanogenmod_bacon_defconfig
-TARGET_KERNEL_SOURCE := kernel/oneplus/msm8974
+TARGET_KERNEL_CONFIG := ownbacon_defconfig
+TARGET_KERNEL_SOURCE := /home/akhilnarang/OwnKernel-bacon
 
 # Enable DIAG on debug builds
 ifneq ($(TARGET_BUILD_VARIANT),user)
@@ -76,7 +76,7 @@ AUDIO_FEATURE_LOW_LATENCY_PRIMARY := true
 ROM_OPTIS := true
 BOARD_GLOBAL_CFLAGS := -mvectorize-with-neon-quad --param l1-cache-size=16 --param l1-cache-line-size=16 --param l2-cache-size=2048
 BOARD_GLOBAL_CPPFLAGS := -mvectorize-with-neon-quad --param l1-cache-size=16 --param l1-cache-line-size=16 --param l2-cache-size=2048
-TARGET_GCC_VERSION_EXP := 4.9
+KERNEL_TOOLCHAIN := /home/akhilnarang/UBERTC/out/arm-eabi-5.2-cortex-a15/bin
 
 # Bluetooth
 BLUETOOTH_HCI_USE_MCT := true
